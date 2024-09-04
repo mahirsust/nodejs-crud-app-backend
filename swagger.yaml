@@ -1,0 +1,174 @@
+openapi: 3.1.0
+info:
+  title: NodeJS Simple CRUD API
+  version: 1.0.0
+  description: API for performing CRUD operations on products
+  contact:
+    name: Muhammad Mahir Hasan Chowdhury
+    email: mahirhasancse@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+
+servers:
+  - url: http://localhost:3000
+
+tags:
+  - name: "Products"
+    description: "API to manage your products"
+
+paths:
+  /api/products:
+    get:
+      summary: List of all products
+      tags: [Products]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:    
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Product'
+    post:
+      summary: Create a new product
+      tags: [Products]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductInput'
+      responses:
+        '200':
+          description: Successful response
+        '201':
+          description: Created
+          content:
+            application/json:    
+              schema:
+                $ref: '#/components/schemas/Product'
+        '400':
+          description: Bad request
+        '500':
+          description: Some server error
+
+  /api/products/{productId}:
+    get:
+      summary: Get a specific product
+      tags: [Products]
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:    
+              schema:
+                $ref: '#/components/schemas/Product'
+        '404':
+          description: Product not found
+    
+    put:
+      summary: Update a product
+      tags: [Products]
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductInput'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:    
+              schema:
+                $ref: '#/components/schemas/Product'
+        '400':
+          description: Bad request
+        '404':
+          description: Product not found
+        '500':
+          description: Some server error
+    
+    delete:
+      summary: Delete a product
+      tags: [Products]
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+        '204':
+          description: Successful response
+        '404':
+          description: Product not found
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+        quantity:
+          type: integer
+        price:
+          type: number
+          format: float
+        image:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+      required:
+        - name
+        - quantity
+        - price
+    
+    ProductInput:
+      type: object
+      properties:
+        name:
+          type: string
+        quantity:
+          type: integer
+        price:
+          type: number
+          format: float
+        image:
+          type: string
+      required:
+        - name
+        - quantity
+        - price
+
+  # securitySchemes:
+  #   bearerAuth:
+  #     type: http
+  #     scheme: bearer
+  #     bearerFormat: JWT
+
+# security:
+#   - bearerAuth: []

@@ -2,17 +2,22 @@ const express = require("express");
 const mongoose = require("mongoose");
 const productRoutes = require("./routes/product.route.js");
 const dotenv = require("dotenv")
+const swaggerUI = require('swagger-ui-express')
+const YAML = require('yamljs')
+const swaggerDocument = YAML.load('./swagger.yaml')
+
 const app = express();
 
 // config
 dotenv.config()
 
-// middleware
 
+// middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // routes
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument, {explorer: true}));
 app.use("/api/products", productRoutes);
 
 app.get("/", (req, res) => {
