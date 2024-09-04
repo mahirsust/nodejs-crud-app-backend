@@ -31,6 +31,8 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Product'
+        '500':
+          description: Some server error
     post:
       summary: Create a new product
       tags: [Products]
@@ -43,6 +45,10 @@ paths:
       responses:
         '200':
           description: Successful response
+          content:
+            application/json:    
+              schema:
+                $ref: '#/components/schemas/Product'
         '201':
           description: Created
           content:
@@ -73,6 +79,8 @@ paths:
                 $ref: '#/components/schemas/Product'
         '404':
           description: Product not found
+        '500':
+          description: Some server error
     
     put:
       summary: Update a product
@@ -119,6 +127,8 @@ paths:
           description: Successful response
         '404':
           description: Product not found
+        '500':
+          description: Some server error
 
 components:
   schemas:
