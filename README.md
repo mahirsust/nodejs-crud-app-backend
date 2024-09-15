@@ -4,7 +4,7 @@ A simple CRUD (Create, Read, Update, Delete) API built using **Node.js** with **
 
 ## Features
 
-- RESTful API for managing a resource (e.g., users, products)
+- RESTful API for managing a resource (e.g. products)
 - Supports CRUD operations:
   - **Create** a new entry
   - **Read** entries (single or all)
