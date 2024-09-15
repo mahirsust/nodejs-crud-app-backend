@@ -61,7 +61,9 @@ Create a **.env** file in the root directory of the project. Refer to **.env.exa
 
 ```bash
 # Environment variables.
-STATUS=development
+
+# Environment Status
+NODE_ENV=your_node_env
 # Development port
 DEV_PORT=3000
 # Production port
@@ -73,6 +75,10 @@ DB_PASSWORD=your_mongodb_password
 DB_COLLECTION_NAME=your_mongodb_collection_name
 DB_APP_NAME=your_mongodb_app_name
 ```
+#### Setting `NODE_ENV`
+
+- Use `NODE_ENV=development` for running the app in **development** mode.
+- Use `NODE_ENV=production` for running the app in **production** mode.
 
 Replace the placeholders with your actual MongoDB credentials and app configurations.
 
