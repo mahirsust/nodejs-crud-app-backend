@@ -40,13 +40,17 @@ npm install
 
 ### 3. Environment Configuration
 
-Create a .env file in the root directory of the project. Refer to .env.example for the required variables:
+Create a **.env** file in the root directory of the project. Refer to **.env.example** for the required variables:
 
 ```bash
-# .env file
+# Environment variables.
 STATUS=development
+# Development port
 DEV_PORT=3000
+# Production port
 PROD_PORT=8080
+
+# DB CONFIG
 DB_USERNAME=your_mongodb_username
 DB_PASSWORD=your_mongodb_password
 DB_COLLECTION_NAME=your_mongodb_collection_name
@@ -63,7 +67,7 @@ Replace the placeholders with your actual MongoDB credentials and app configurat
 npm run dev
 ```
 
-The application will run on the port defined in DEV_PORT (default is 3000).
+The application will run on the port defined in **DEV_PORT** (default is 3000).
 
 #### In Production Mode
 
@@ -71,7 +75,7 @@ The application will run on the port defined in DEV_PORT (default is 3000).
 npm start
 ```
 
-The application will run on the port defined in PROD_PORT.
+The application will run on the port defined in **PROD_PORT**.
 
 ### 5. Access the API
 
@@ -86,7 +90,7 @@ Here are some example endpoints:
 
 ## API Documentation
 
-This project includes a Swagger file (`swagger.yaml`) for API documentation. You can visualize the documentation using [Swagger UI](https://swagger.io/tools/swagger-ui/) or similar tools.
+This project includes a Swagger file (**swagger.yaml**) for API documentation. You can visualize the documentation using [Swagger UI](https://swagger.io/tools/swagger-ui/) or similar tools.
 
 ## Folder Structure
 
@@ -111,11 +115,11 @@ This project includes a Swagger file (`swagger.yaml`) for API documentation. You
 
 Once the app is running, you can test the CRUD functionality by sending HTTP requests to the available endpoints. Here are some common scenarios:
 
-- **Create a new item**: Send a POST request to `/api/items` with the item data in the request body.
-- **Retrieve all items**: Send a GET request to `/api/items` to get a list of all items in the collection.
-- **Retrieve a single item**: Send a GET request to `/api/items/:id` where `:id` is the ID of the item.
-- **Update an item**: Send a PUT request to `/api/items/:id` with the updated data.
-- **Delete an item**: Send a DELETE request to `/api/items/:id`.
+- **Create a new item**: Send a POST request to **/api/items** with the item data in the request body.
+- **Retrieve all items**: Send a GET request to **/api/items** to get a list of all items in the collection.
+- **Retrieve a single item**: Send a GET request to **/api/items/:id** where **:id** is the **ID** of the item.
+- **Update an item**: Send a PUT request to **/api/items/:id** with the updated data.
+- **Delete an item**: Send a DELETE request to **/api/items/:id**.
 
 You can use a tool like Postman, curl, or even a frontend application to interact with the API.
 
