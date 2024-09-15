@@ -2,6 +2,23 @@
 
 A simple CRUD (Create, Read, Update, Delete) API built using **Node.js** with **Express.js** and **MongoDB** as the database.
 
+# Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [1. Clone the Repository](#1-clone-the-repository)
+  - [2. Install Dependencies](#2-install-dependencies)
+  - [3. Environment Configuration](#3-environment-configuration)
+  - [4. Running the App](#4-running-the-app)
+- [Access the API](#access-the-api)
+- [API Documentation](#api-documentation)
+- [Folder Structure](#folder-structure)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Features
 
 - RESTful API for managing a resource (e.g. products)
