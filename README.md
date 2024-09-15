@@ -96,6 +96,13 @@ The application will run on the port defined in **PROD_PORT**.
 
 ### 5. Access the API
 
+The base URL for accessing the API is:
+
+```bash
+http://localhost:[PORT]/
+```
+Replace [PORT] with the port number your server is running on (e.g., 3000 or 8080).
+
 You can interact with the API using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
 
 Here are some example endpoints:
@@ -105,6 +112,8 @@ Here are some example endpoints:
 - **PUT** `/api/items/:id` - Update an item by ID
 - **DELETE** `/api/items/:id` - Delete an item by ID
 
+Replace **items** with the resource name (e.g. products)
+
 ## API Documentation
 
 This project includes a Swagger file (**swagger.yaml**) for API documentation. You can visualize the documentation using [Swagger UI](https://swagger.io/tools/swagger-ui/) or similar tools. To view the interactive Swagger UI in your browser, use the following URL once the server is running:
@@ -113,7 +122,7 @@ This project includes a Swagger file (**swagger.yaml**) for API documentation. Y
 http://localhost:[PORT]/api-docs
 ```
 
-This URL will give you access to the full API documentation where you can interact with the endpoints directly from the browser. Replace [PORT] with the port number your server is running on (e.g., 3000 or 8080).
+This URL will give you access to the full API documentation where you can interact with the endpoints directly from the browser.
 
 ## Folder Structure
 
