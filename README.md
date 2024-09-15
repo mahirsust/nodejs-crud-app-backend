@@ -12,7 +12,7 @@ A simple CRUD (Create, Read, Update, Delete) API built using **Node.js** with **
   - **Delete** an entry
 - Uses **MongoDB** for data storage
 - **Express.js** for routing and handling HTTP requests
-- Environment configuration using `.env` file
+- Environment configuration using **.env** file
 - Swagger documentation for API routes
 
 ## Prerequisites
