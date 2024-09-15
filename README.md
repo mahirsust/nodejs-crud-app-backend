@@ -11,7 +11,7 @@ A simple CRUD (Create, Read, Update, Delete) API built using **Node.js** with **
   - [2. Install Dependencies](#2-install-dependencies)
   - [3. Environment Configuration](#3-environment-configuration)
   - [4. Running the App](#4-running-the-app)
-- [Access the API](#access-the-api)
+  - [5. Access the API](#access-the-api)
 - [API Documentation](#api-documentation)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
