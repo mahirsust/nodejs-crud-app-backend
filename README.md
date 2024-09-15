@@ -75,9 +75,7 @@ DB_PASSWORD=your_mongodb_password
 DB_COLLECTION_NAME=your_mongodb_collection_name
 DB_APP_NAME=your_mongodb_app_name
 ```
-#### Setting 
-NODE_ENV:
-
+#### Setting `NODE_ENV`:
 - Use `NODE_ENV=development` for running the app in **development** mode.
 - Use `NODE_ENV=production` for running the app in **production** mode.
 
@@ -108,6 +106,7 @@ The base URL for accessing the API is:
 ```bash
 http://localhost:[PORT]/
 ```
+
 **[PORT]** is the port number your server is running on (e.g., 3000 or 8080).
 
 You can interact with the API using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
