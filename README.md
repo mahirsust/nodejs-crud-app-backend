@@ -27,10 +27,12 @@ Make sure you have the following installed on your machine:
 
 ### 1. Clone the Repository
 
-```bash
+<div style="background-color: rgb(50, 50, 50);">
+
+``bash
 git clone https://github.com/mahirsust/nodejs-crud-app-backend.git
 cd nodejs-crud-app-backend
-```
+``
 
 ### 2. Install Dependencies
 
