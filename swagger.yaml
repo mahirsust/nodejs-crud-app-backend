@@ -10,9 +10,6 @@ info:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
 
-servers:
-  - url: http://localhost:3000
-
 tags:
   - name: "Products"
     description: "API to manage your products"
