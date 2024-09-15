@@ -91,7 +91,7 @@ Replace the placeholders with your actual MongoDB credentials and app configurat
 npm run dev
 ```
 
-The application will run on the port defined in **DEV_PORT** (default is 3000).
+The application will run on the port defined in **DEV_PORT**.
 
 #### In Production Mode
 
@@ -108,7 +108,7 @@ The base URL for accessing the API is:
 ```bash
 http://localhost:[PORT]/
 ```
-Replace **[PORT]** with the port number your server is running on (e.g., 3000 or 8080).
+**[PORT]** is the port number your server is running on (e.g., 3000 or 8080).
 
 You can interact with the API using tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/).
 
