@@ -107,7 +107,13 @@ Here are some example endpoints:
 
 ## API Documentation
 
-This project includes a Swagger file (**swagger.yaml**) for API documentation. You can visualize the documentation using [Swagger UI](https://swagger.io/tools/swagger-ui/) or similar tools.
+This project includes a Swagger file (**swagger.yaml**) for API documentation. You can visualize the documentation using [Swagger UI](https://swagger.io/tools/swagger-ui/) or similar tools. To view the interactive Swagger UI in your browser, use the following URL once the server is running:
+
+```bash
+http://localhost:[PORT]/api-docs
+```
+
+This URL will give you access to the full API documentation where you can interact with the endpoints directly from the browser. Replace [PORT] with the port number your server is running on (e.g., 3000 or 8080).
 
 ## Folder Structure
 
