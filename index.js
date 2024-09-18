@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 
 // db and server connect
 const PORT = process.env.NODE_ENV === 'production' ? process.env.PROD_PORT : process.env.DEV_PORT;
-const dbConnectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@backenddb.tihcy.mongodb.net/${process.env.DB_COLLECTION_NAME}?retryWrites=true&w=majority&appName=${process.env.DB_APP_NAME}`
+const dbConnectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@backenddb.tihcy.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority&appName=${process.env.DB_APP_NAME}`
 
 mongoose
   .connect(
