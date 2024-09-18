@@ -72,8 +72,8 @@ PROD_PORT=8080
 # DB CONFIG
 DB_USERNAME=your_mongodb_username
 DB_PASSWORD=your_mongodb_password
-DB_COLLECTION_NAME=your_mongodb_collection_name
-DB_APP_NAME=your_mongodb_app_name
+DB_NAME=your_mongodb_database_name
+DB_CLUSTER_NAME=your_mongodb_cluster_name
 ```
 #### Setting `NODE_ENV`:
 - Use `NODE_ENV=development` for running the app in **development** mode.
